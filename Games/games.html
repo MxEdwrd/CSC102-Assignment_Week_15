@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Author: Max Edward
+    Email: maxedwar@uat.edu
+    Refer to index.html for Assignment
+-->
+<html>
+  <head>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="gamestyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <script src="playdice.js"></script>
+    <title>Max Edward - Games</title>
+  </head>
+  <header>
+    <center>
+      <div class="menubox">
+        <h1 class="title">
+          Max Edward's Dice Game
+        </h1>
+        <div class="headerinfo">
+          <p>
+            Max Edward | Digital Making & Fabrication
+          </p>
+          <br />
+        </div>
+        <div style="text-align: center">
+          <a href="../index.html" style="text-decoration: none">
+            <button class="menubutton" onclick="">Landing Page</button>
+          </a>
+          <a href="../UATSpace/login.html" style="text-decoration: none">
+            <button class="menubutton" onclick="">UAT Space</button>
+          </a>
+          <a href="../Boards/boards.html" style="text-decoration: none">
+            <button class="menubutton" onclick="">Objectives Board</button>
+          </a>
+        </div>
+        <img class="profpic" src="../Skelly.png" alt="Max Edward" />
+    </center>
+  </header>
+  <body>
+    <!-- Below is code for Dice Game-->
+    <center>
+    <div style="width: fit-content; padding: 20px;">
+      <div class="textbackdropstatus">
+        <div class="info" style="padding: 15px;">
+          <p>Die Status</p>
+          <p id="die1status">Waiting For Start...</p>
+          <p id="die2status">Waiting For Start...</p>
+          <p id="diceresult">Dice Result</p>
+          <br />
+          <button
+            class="button"
+            onclick="playdice()"
+          >
+            Roll the Dice!
+          </button>
+        </div>
+      </div>
+      <div class="textbackdropsum">
+        <div class="info" style="padding: 15px;">
+          Dice Sum
+        <p id="dicesum">Waiting For Start...</p>
+        <p id="wins">You Have Won <div id="winstatus">0</div>times.</p>
+        <p id="losses">You Have Lost <div id="losestatus">0</div>times.</p>
+        </div>
+      </div>
+      <div style="margin-top: 350px;">
+        <a href="snake.html" style="text-decoration: none">
+          <button class="menubutton" onclick="">Play Snake!</button>
+        </a>
+      </div>
+  </div>
+</center>
+  </body>
+  <footer>
+    <div class="footer" style="text-align: center">
+      <p class="footertext">
+        <a
+          href="https://www.google.com/maps/place/University+of+Advancing+Technology/@33.3777979,-111.9781919,17z/data=!3m1!4b1!4m5!3m4!1s0x872b0f5fdfc2df7f:0xd9cf1f2e9455327d!8m2!3d33.3777934!4d-111.9760032"
+          target="_blank"
+          class="address"
+          style="text-decoration: none"
+        >
+          University of Advancing Technology - 2625 W. Baseline Tempe, AZ 85283
+        </a>
+        | maxedwar@uat.edu | M3D Designs 2021
+      </p>
+    </div>
+  </footer>
+</html>
